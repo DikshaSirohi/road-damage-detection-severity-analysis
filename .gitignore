@@ -1,0 +1,6 @@
+combined_annotatedv2/
+combined_annotatedv2_working/
+__pycache__/
+.vscode/
+runs/
+*.pt
