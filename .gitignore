@@ -1,6 +1,23 @@
+
+# Datasets
 combined_annotatedv2/
 combined_annotatedv2_working/
-__pycache__/
-.vscode/
+road_damage_yolo/
+
+# Model training outputs
 runs/
 *.pt
+*.onnx
+*.cache
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Generated contact sheets
+distance2_contact_sheets/
+
+# Environment files
+.env
