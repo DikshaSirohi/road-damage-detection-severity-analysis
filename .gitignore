@@ -1,23 +1,77 @@
 
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local tooling
+.klio/
+
+# Ignore all Markdown files except README
+*.md
+!README.md
+
 # Datasets
+ALL_FILESSSS/
 combined_annotatedv2/
 combined_annotatedv2_working/
 road_damage_yolo/
-
-# Model training outputs
-runs/
-*.pt
-*.onnx
-*.cache
-
-# Python
-__pycache__/
-*.pyc
-.venv/
-venv/
-
-# Generated contact sheets
 distance2_contact_sheets/
 
-# Environment files
+# Training, evaluation and generated outputs
+runs/
+benchmark_results/
+detection_investigation_results/
+final_evaluation_results/
+four_family_v1_results/
+severity_audit/
+severity_audit_crops/
+
+# Model weights
+*.pt
+*.pth
+*.onnx
+*.engine
+*.tflite
+
+# Archives
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Generated reports and investigation files
+dataset_structure.txt
+class_ids.txt
+class_ids_sorted.txt
+confirmed_duplicate_pairs.txt
+near_duplicate_candidates.txt
+orb_candidate_report.txt
+phash_zero_candidates.jpg
+
+# Keep split and leakage metadata until reviewed
+# dataset_split.csv
+# leakage_groups.csv
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.cache
+
+# Secrets
 .env
+.env.*
+!.env.example
